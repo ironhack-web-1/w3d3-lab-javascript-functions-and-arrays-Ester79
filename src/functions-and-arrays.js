@@ -1,5 +1,13 @@
 // Iteration #1: Find the maximum
-function maxOfTwoNumbers() {}
+function maxOfTwoNumbers(firstNumber, secondNumber) {
+  let maxNumber;
+  if(firstNumber > secondNumber){
+    maxNumber = firstNumber;
+  }else {
+    maxNumber = secondNumber;
+  }
+  return maxNumber;
+}
 
 
 
