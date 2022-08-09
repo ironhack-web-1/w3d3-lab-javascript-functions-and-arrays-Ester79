@@ -71,7 +71,17 @@ function averageWordLength(wordsArr) {
  }
 
 // Bonus - Iteration #4.1
-function avg() {}
+const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
+function avg(mixedArr) {
+  let result;
+  for(let i=0; mixedArr.length; i++){
+    if(typeof mixedArr[i] === "string"){
+      mixedArr[i] = mixedArr[i].length;
+      result += mixedArr[i];
+    }
+  }
+  return result;
+}
 
 // Iteration #5: Unique arrays
 const wordsUnique = [
