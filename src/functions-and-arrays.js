@@ -74,7 +74,7 @@ function averageWordLength(wordsArr) {
 const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
 function avg(mixedArr) {
   let result;
-  for(let i=0; mixedArr.length; i++){
+  for(let i=0; i<=mixedArr.length; i++){
     if(typeof mixedArr[i] === "string"){
       mixedArr[i] = mixedArr[i].length;
       result += mixedArr[i];
@@ -113,7 +113,15 @@ function uniquifyArray(wordsUnique) {
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist() {}
+function doesWordExist(wordsFind) {
+  let existWord = false;
+  for(let i= 0; i<= wordsFind.length; i++){
+    if(wordsFind[i] === "word"){
+      existWord = true;
+    }
+  }
+  return existWord;
+}
 
 
 
