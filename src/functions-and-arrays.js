@@ -140,7 +140,13 @@ const wordsCount = [
   'matter'
 ];
 
-function howManyTimes() {}
+function howManyTimes(wordsCount) {
+  let countTimes = {};
+  wordsCount.forEach((element)=> {
+    countTimes[element] = (countTimes[element] || 0) +1;
+  })
+  return countTimes;
+}
 
 
 
